@@ -157,8 +157,24 @@ footer {
   color: white;
 }
 
+.ftr-left {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-left: 10px;
+	color: white;
+}
+
 .ftr-address {
 	color: #383838;
+}
+
+.ftr-text {
+	text-align: left;
+}
+
+.fa {
+	margin-right: 10px;
 }
 
 
