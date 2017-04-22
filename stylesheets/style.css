@@ -61,41 +61,64 @@ footer {
 
 
 #main-banner {
-	background-image: url("../images/flower-bkgd.jpg");
-	background-repeat: no-repeat;
-	max-height: 500px;
-	height: 500px;
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/flower-bkgd.jpg");
+	background-repeat: repeat;
+	background-position: center;
+	background-size: contain;
+	display: flex;
+	max-height: 550px;
+	height: 550px;
 	position: relative;
 	line-height: 500px;
+	overflow: hidden;
 }
 
-#main-banner > img{
-	display: block;
-	max-height: 400px;
+.mb-model {
+	z-index: 500;
+	margin: 0;
+	margin-bottom: -100px;
+	height: 100%;
+	display: flex;
 	position: absolute;
 	bottom: 0;
-	margin: 0 auto;
-	left: 45%;
+	left: 40%;
 }
 
-#main-banner > div {
-	text-align: center;
+
+.main-banner-details {
 	color: white;
+  position: relative;
+  z-index: 1000;
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .mb-title {
-	margin: 0;
+	text-align: center;
+	vertical-align: text-top;
+	line-height: 325px;
+	margin: auto;
+	top: 0;
+	height: 10%;
+	font-family: 'Raleway';
+	font-weight: bold;
 }
 
 .mb-season {
 	margin: 0;
+	vertical-align: text-top;
+	height: 10%;
+	line-height: 325px;
+	font-family: 'Playfair';
+	font-weight: bold;
+	font-size: 60px;
 }
 
 
 .cta-banner {
 	height: 200px;
 	text-align: center;
-	vertical-align: center;
 }
 
 .cta-banner > h5 {
@@ -116,53 +139,234 @@ footer {
 }
 
 .dr-row-1 {
-	height: 100px;
+	height: 320px;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 100%;
 }
 
-.dr-row-1 > div {
-	height: 100px;
+.directory {
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+
+.directory > h6 {
+	text-align: center;
+	color: white;
+	vertical-align: middle;
+	line-height: 300px;
+	font-family: 'Raleway';
+	font-size: 24px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+#directory-mens {
+	background-image: url("../images/mens-category.jpg");
+	height: 100%;
+	justify-content: flex-start;
+	flex: 2;
+	order: 1;
+	flex-wrap: wrap;
+
+}
+
+
+#directory-trends {
+	background-image: url("../images/trends-category.jpg");
+	height: 100%;	
+	justify-content: center;
+	flex: 1;
+	order: 2;
+	flex-wrap: wrap;
+
+}
+
+#directory-glasses {
+	background-image: url("../images/glasses-category.jpg");
+	height: 100%;
+	justify-content: flex-end;
+	flex: 1;
+	order: 3;
+	flex-wrap: wrap;
+
+}
+
+
+.dr-row-2 {
+	height: 320px;
+	display: inline-flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+
+#directory-sale {
+	background-image: url("../images/sale-category.jpg");
+	justify-content: flex-start;
+	flex: 1;
+	order: 1;
+}
+
+#directory-bags {
+	background-image: url("../images/bags-category.jpg");
+	justify-content: center;
+	flex: 1;
+	order: 2;
+}
+
+#directory-womens {
+	background-image: url("../images/womens-category.jpg");
+	justify-content: flex-end;
+	flex: 2;
+	order: 3;
+}
+
+.lc-header {
+	display: table;
+	margin: auto;
+}
+
+.lc-header > h5 {
+	font-family: 'Playfair';
+	font-size: 20px;
+}
+
+.most-loved {
+	text-decoration: italic;
+}
+
+
 
 .lc-Row {
 	width: 100%;
 	margin: auto;
+	display: flex;
+	flex-direction: row;
 }
 
-.lcr-1 {
-	float: left;
+.loved-item {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.lcr-category {
+	font-family: 'Raleway';
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #949494;
+}
+
+.lcr-product-name {
+	font-family: 'Playfair';
+	font-size: 20px;
+	font-weight: lighter;
+	color: #e05a53;
+	margin: 0;
+}
+
+.lcr-price {
+	font-family: 'Raleway';
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #949494;
+}
+
+.updates-banner-container {
+	background-image: url("../images/wave-bkgd.jpg");
+	background-repeat: no-repeat;	
+	background-position: center bottom;
+	height: 350px;
+	width: 100%;
+	display: table;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.update-details {
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+  margin: 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.update-details > h5 {
+	font-family: 'Playfair';
+	font-size: 35px;
+	color: white;
+	margin: 0;
+	text-align: center;
+}
+
+.update-details > p {
+	font-family: 'Raleway';
+	font-size: 12px;
+	color: white;
+	text-align: center;
+	width: 50%
+	margin: auto;
+}
+
+.subscribe {
+	text-align: center;
+}
+
+.subscribe-input {
+	border-radius: 25px;
 	width: 20%;
+	height: 25px;
+	padding-right: 75px;
 }
 
-.lcr-2 {
-	float: left;
-	width: 20%;
+.subscribe-button {
+	background-color: #e05851;
+	color: white;
+	font-family: 'Raleway';
+	height: 25px;
+	border-radius: 25px;
+	border-color: #e05851;
+	margin-left: -75px;
 }
-
-.lcr-3 {
-	float: left;
-	width: 20%;
-}
-
 
 #footer {
 	display: flex;
+	flex-direction: row;
+
 }
 
-.ftr-right {
-	display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  flex: 1;
-  margin-right: 10px;
-  color: white;
+.footer-container {
+	width: 100%;	
+		display: flex;
+	flex-direction: row;
 }
 
 .ftr-left {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	flex: 2;
 	justify-content: flex-start;
+	align-items: flex-start;
 	margin-left: 10px;
 	color: white;
+}
+
+.ftr-right {
+	display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1;
+  margin-right: 10px;
+  color: white;
 }
 
 .ftr-address {
@@ -175,53 +379,4 @@ footer {
 
 .fa {
 	margin-right: 10px;
-}
-
-
-
-.directory-mens {
-	background-image: url("../images/mens-category.jpg");
-	background-repeat: no-repeat;
-	width: 50%;
-	float: left;
-}
-
-.directory-trends {
-	background-image: url("../images/trends-category.jpg");
-	background-repeat: no-repeat;
-	width: 25%;
-	float: left;
-}
-
-.directory-glasses {
-	background-image: url("../images/glasses-category.jpg");
-	background-repeat: no-repeat;
-	width: 25%;
-	float: left;
-}
-
-.directory-sale {
-	background-image: url("../images/sale-category.jpg");
-	background-repeat: no-repeat;
-	width: 25%;
-	float: left;
-}
-
-.directory-bags {
-	background-image: url("../images/bags-category.jpg");
-	background-repeat: no-repeat;
-	width: 25%;
-	float: left;
-}
-
-.directory-womens {
-	background-image: url("../images/womens-category.jpg");
-	background-repeat: no-repeat;
-	width: 50%;
-	float: left;
-}
-
-.updates-banner-container {
-	background-image: url("../images/wave-bkgd.jpg");
-	background-repeat: no-repeat;	
 }
